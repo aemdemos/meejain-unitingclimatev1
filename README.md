@@ -1,34 +1,24 @@
-# Milo goes to college
-Use this project template to create a Milo site.
+# meejain-unitingclimatev1
+This is a project created by the ESaaS Demo Tool. It is based on [https://github.com/adobecom/milo-college](https://github.com/adobecom/milo-college).
 
-## Steps
+## Environments
+- Preview: https://main--meejain-unitingclimatev1--aemdemos.hlx.page/
+- Live: https://main--meejain-unitingclimatev1--aemdemos.hlx.live/
 
-1. Copy existing [`college`](https://adobe.sharepoint.com/:f:/r/sites/adobecom/Shared%20Documents/demos/college) content folder to your sharepoint and give helix@adobe.com View access
-2. Click "[Use this template](https://github.com/adobecom/milo-college/generate)" Github button on this project.
-3. Install the [AEM Code Sync Bot](https://github.com/apps/aem-code-sync)
+## Installation
 
-From your newly created project
-
-1. Install the [Helix Bot](https://github.com/apps/helix-bot/installations/new).
-2. Change the fstab.yaml file to point to your content.
-3. Add the project to the [Helix Sidekick](https://github.com/adobe/helix-sidekick).
-4. Start creating your content.
-
-## Developing
-1. Install the [Helix CLI](https://github.com/adobe/helix-cli): `sudo npm install -g @adobe/aem-cli`
-1. Run `aem up` this repo's folder. (opens your browser at `http://localhost:3000`)
-1. Open this repo's folder in your favorite editor and start coding.
-
-## Testing
 ```sh
-npm run test
+npm i
 ```
-or:
-```sh
-npm run test:watch
-```
-This will give you several options to debug tests. Note: coverage may not be accurate.
 
-## Security
-1. Create a Service Now ID for your project via [Service Registry Portal](https://adobe.service-now.com/service_registry_portal.do#/search)
-2. Update the `.kodiak/config.yaml` file to make sure valid team members are assigned security vulnerability Jira tickets.
+## Linting
+
+```sh
+npm run lint
+```
+
+## Local development
+
+1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
+1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000/`)
+1. Open the `meejain-unitingclimatev1` directory in your favorite IDE and start coding :)
